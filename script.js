@@ -6,7 +6,6 @@
     }).then((completedata)=>{
         // console.log(completedata);    
         //checks if data is successfully fetched
-    
         let data1 = "";
         completedata.map((values)=>{
             data1+=`<div class="menu">
@@ -21,9 +20,7 @@
     
     }).catch((err)=>{
         console.log(err);
-    
     })
-    
         //Add Event Listener to the button on form
         const form= document.getElementById('form')
         form.addEventListener('submit', function(e){
@@ -39,7 +36,6 @@
         let email = document.getElementById('email').value
         console.log(email)
     })
-    
     // Add a glider to the slide section on the testimonial section, including the Dots. 
     //Glider idea acquired from a Youtube-video and operationalized here. Check also two additional files linked, glider.min.js and glider.min.css. 
     new Glider(document.querySelector(".testimonial"),{
@@ -50,7 +46,6 @@
             next:".slider-next",
         },
     })
-    
     //Add a placeOrder button below the contact form with an alert notifying the user that their order has been received and further communication will be made through the phone number provided. 
     function placeOrder() {
     alert("Your Order has been Successfully Placed. You will receive an SMS Notification with details. Thank you for being a loyal diner with Mio Pranzo!!")
