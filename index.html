@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="glider.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/Mio Pranzo.png" style="width:100%; height: 100%;" alt="">
+                </a>
+            </div>
+            <ul class="menu-items"></ul>
+            <li>
+                <a href="#about" class="Active">About</a>
+            </li>
+            <li>
+                <a href="#menu">Our Menu</a>
+            </li>
+            <li>
+                <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+                <a href="#contact">Contact to Order</a>
+            </li>
+        </nav>
+        <!-- End of Desktop Nav -->
+        <header class="hero-container">
+            <div class="left">
+                <h1>Welcome To </h1>
+                <h1 class="brand-name"><span class="Mio">Mio </span>Pranzo</h1>
+                <p>Your One-Stop Site for Office <br> or Home Delivered Lunch</p>
+                <a href="#menu" class="btn green">See Today's Menu</a>
+            </div>
+        </header>
+        <section id="about" class="about-section">
+            <h1>About Us</h1>
+            <div class="section-content">
+                <div class="about-description">
+                    <p>
+                        Mio Pranzo is the premiere online delivery service for ordering from Nairobi’s best restaurants and grocery stores. Browse through our diverse range of menus and when you order online from your favourite places they are always saved for easy and faster reordering, meal-planning and loyalty points.
+                    </p>
+                    <p>
+                        Mio Pranzo launched in 2022 with the aim of making it simple and easy for anyone to order food straight to their door. We now work with over 100 restaurants and over 5,000 customers in Nairobi and plans are underway to create new partners in other cities in Kenya and East Africa.
+                    </p>
+                </div>
+                    <img src="images/About us.png" alt="">
+                </div>
+        </section>
+        <!-- Menu Section to be displayed from API -->
+        <h1>Our Menu</h1>
+        <h2>Check out our today's Menu and <a href="#contact" class="btn">Place Order</a></h2>
+        <div id="menu" class="menu-container">
+            <!-- Section moved to script.js for direct API fetching -->
+        </div>
+    
+    </div>
+    <!-- Testimonials Wrapper Starts here. Images from images file -->
+        <div class="wrapper">
+            <h1>Testimonials</h1>
+            <div id="testimonials" class="testimonials-container">
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="slide-container">
+                            <div class="content">
+                                <p>
+                                    Professional services that leave the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. Will always go with Mio Pranzo!
+                                </p>
+                                <div class="name">
+                                    <strong>Mrs Hellen S. </strong> Vitality E.A Ltd.</div>
+                            </div>
+                            <img src="images/Testimonials image 1.png" alt="">
+                        </div>
+                        <div class="slide-container">
+                            <div class="content">
+                                <p>
+                                    It’s a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations.
+                                </p>
+                                <div class="name"><strong>Mr. Kamoni James </strong>Remani Solutions Ltd.</div>
+                            </div>
+                            <img src="images/Testimonials image 2.png" alt="">
+                        </div>
+                        <div class="slide-container">
+                            <div class="content">
+                                <p>
+                                    Excellent food, seasonala nd high standard. Definitely fine dining. It's worth it and deals to fit your liking and budget so it’s worth checking them out. Highly recommended.
+                                </p>
+                                <div class="name"><strong>Mr. Rashid Abdi </strong>  Beautyland Cosmetics Intl.</div>
+                            </div>
+                            <img src="images/Testimonials image 3.png" alt="">
+                        </div>
+                        <div class="slide-container">
+                            <div class="content">
+                                <p>
+                                    The best and easiest way to order food and get it delivered, hot, fresh and healthy to your office lobby.  Mio Pranzo is just at the top of the game. Highly recommended.
+                                </p>
+                                <div class="name"><strong>Ms. Letisha Waithaka </strong> The Hub Enterprise Ltd.</div>
+                            </div>
+                            <img src="images/Testimonials image 4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <span class="slider-prev">
+                    <img src="images/Left Arrow.png" alt=""></span>
+                 <span class="slider-next">
+                    <img src="images/Right Arrow.png" alt=""></span>
+                <div role ="tablist" class="dot-container">
+                    <div class="dots"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Testimonial section complete, Contact Us Section starts here-->
+    <div class="wrapper">
+        <secttion id="contact" class="contact-section">
+            <h2>Order Now</h2>
+            <form id="form" action="#">
+                <div class="group">
+                    <input type="text" id="order" placeholder="Order Name" required>
+                    <input type="text" id="phone" placeholder="Phone Number" required>
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+                <div class="group">
+                    <input type="text" id="address" placeholder="Location Address/Delivery Details" required>
+                    <input type="text" id="email" placeholder="Email">
+                </div>
+                <button onclick="placeOrder()">Place Order</button>
+            </form>
+        </secttion>
+    </div>
+    <!-- End of Contact Section -->
+    <footer>
+        <div class="wrapper">
+            <div class="footer-container">
+                <div class="logo">
+                    <img src="/images/Mio Pranzo.png" alt="">
+                </div>
+                <div class="footer-nav">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Order Management</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Recipe Errands</a></li>
+                        <li><a href="#">Healthy Meal Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h3>Further Information:</h3>
+                    <ul>
+                        <li><a href="#contact">Contact Support</a></li>
+                        <li><a href="#">Our Location</a></li>
+                        <li><a href="#contact">Send Feedback</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h3>Find Us on Social Media</h3>
+                    <div class="social-media">
+                        <a href="#">
+                            <img src="/images/Whatsapp.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/images/Instagram.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/images/Facebook.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/images/Twitter.png" alt="">
+                        </a>
+                    </div>
+                    <p>Email: frankproficient@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">This website was developed by Francis Muriithi. &copy;2022 </p>
+    </footer>
+    <!-- End of the Footer -->
+    <script src="glider.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
