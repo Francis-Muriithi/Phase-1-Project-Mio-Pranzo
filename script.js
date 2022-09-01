@@ -50,7 +50,6 @@
             next:".slider-next",
         },
     })
-    
     //Add a placeOrder button below the contact form with an alert notifying the user that their order has been received and further communication will be made through the phone number provided. 
     function placeOrder() {
     alert("Your Order has been Successfully Placed. You will receive an SMS Notification with details. Thank you for being a loyal diner with Mio Pranzo!!")
